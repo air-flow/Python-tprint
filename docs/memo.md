@@ -22,3 +22,11 @@
 
 - char
 - varchar
+
+### 設定できる項目
+
+- 表形式
+- 列の長さ
+- 列の配置
+- エラー時の振る舞い
+- 縦表示（MySQL SELECT \* FROM dual;\G）

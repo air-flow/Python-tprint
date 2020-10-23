@@ -1,5 +1,6 @@
 import datetime
 from datetime import date
+import pprint
 import random
 def tprint(data):
     key_len = CreateColumnDict(data)
@@ -52,4 +53,5 @@ def main():
     data = CreateData()
     tprint(data)
 if __name__ == "__main__":
-    main()
+    # main()
+    pprint.pprint(CreateData())
