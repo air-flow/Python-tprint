@@ -4,9 +4,9 @@ import pprint
 import random
 def tprint(data):
     key_len = CreateColumnDict(data)
-    PrintHyphen(key_len)
+    # PrintHyphen(key_len)
     PrintColumnName(key_len)
-    PrintHyphen(key_len)
+    # PrintHyphen(key_len)
     for i in data:
         temp = []
         for key,value in i.items():
@@ -15,9 +15,9 @@ def tprint(data):
     PrintHyphen(key_len)
 def PrintColumnName(key_list):
         temp = []
-        for key,value in key_list.items():
-            temp.append(str(key).rjust(key_list[key], " "))
-        print("|"+"|".join(temp)+"|")
+        for key in key_list.keys():
+            temp.append(str(key).rjust(key_list[key]+5, " "))
+        print("     ".join(temp))
 def PrintHyphen(key_list):
     print("+"+"-"*(int(len(key_list))-1+sum(list(key_list.values())))+"+")
 def MoreStrLne(data):
@@ -53,5 +53,5 @@ def main():
     data = CreateData()
     tprint(data)
 if __name__ == "__main__":
-    # main()
-    pprint.pprint(CreateData())
+    main()
+    # pprint.pprint(CreateData())
