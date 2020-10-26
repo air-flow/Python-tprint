@@ -123,18 +123,15 @@ _cursorclass_ で _pymysql.cursors.DictCursor_ を指定している。
 |              name               |              abcde              |     5      |
 | crrent_datetime_date_time_today | crrent_datetime_date_time_today |     31     |
 
-```sql
+````sql
 
 --RESULT
-    USER_ID USER_NAME
----------- --------------------------------
-       100 富樫 歩夢
-       101 小杉 光輝
-       102 倉本 大翔
-       103 長谷川 春奈
-       104 荒木 奈央子
+         1          2          3          4          5          6
+---------- --------- ---------- ---------- ---------- ----------
+         1          2          3          4          5          6
 ```
 
 ## 参考
 
 [tabulate](https://pypi.org/project/tabulate/)
+````
