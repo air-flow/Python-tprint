@@ -54,5 +54,5 @@ def main():
     tprint(data)
 if __name__ == "__main__":
     # main()を実行することで想定の結果を取得できる。
-    # main()
-    pprint.pprint(CreateData())
+    main()
+    # pprint.pprint(CreateData())
